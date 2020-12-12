@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="./favicon.ico" type="/image/x-icon">
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-gf@1.0.5/assets/Gantzert_Felixander.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 200,  //小萝莉的宽度
+            "height": 300, //小萝莉的高度
+            "hOffset": -50,
+            "vOffset": -180
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+</head>
+<body>
+    <div id="loginbox">
+        <h1 class="title">
+            Welcome
+        </h1>
+        <div class="item">
+            <i class="fa fa-user-circle"></i>
+            <input class="Username" type="text" name="Username" id="Username" placeholder="Username">
+        </div>
+        <div class="item">
+            <i class="fa fa-key"></i><!-- 可以调节font-size color等 -->
+            <input class="Password" type="password" name="Password" id="Password" placeholder="Password">
+        </div>
+        <div class="button">
+            <button>
+                Login
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

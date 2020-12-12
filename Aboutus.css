@@ -1,0 +1,241 @@
+body,h2{
+    cursor: url(./image/a.cur),auto;
+}
+.leading{
+    position: sticky;
+    top: 10%;
+    left: 50%;
+  }
+  ul{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  ul li{
+      list-style: none;
+  }
+  ul li a{
+      position: relative;
+      display: block;
+      padding: 10px 20px;
+      margin: 50px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #a0a0a0;
+    font-weight: bold;
+    font-size: 30px;
+      transition: .5s;
+  }
+  ul li a:hover{
+      color: #fff;
+  }
+  ul li a:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid  #c0c0c0;
+      border-bottom: 1px solid  #c0c0c0;
+      transform: scaleY(2);
+      opacity: 0;
+      transition: .5s;
+      z-index: 1;
+  }
+  ul li a:hover:before{
+      transform: scaleY(1.2);
+      opacity: 1;
+  }
+  ul li a:after{
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #c0c0c0;
+      transform: scale(0);
+      transition: .5s;
+      z-index: 1;
+  }
+  ul li a:hover:after{
+      transform: scale(1);
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background:#303030;
+    /* -webkit-srollerbar: display : none; */
+}
+#menu{
+    margin:0;
+    padding:0;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+#menu li{
+    list-style: none;
+    display:inline-block;
+}
+#menu li a{
+    text-decoration: none;/*导航排版*/
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+    display:block;
+    overflow:hidden;
+    transition:0.7s all;
+    padding:6px 20px;
+}
+#menu li a:before{
+    content:'';
+    width:60px;
+    position:absolute;
+    border-bottom:4px solid #ffffff;
+    bottom:0;
+    right:350px;
+    transition:0.7s all;/*下划线延迟*/
+}
+#menu li a:hover:before{
+    right:0
+}
+.container{
+    position:relative;
+    width: 100%;  /*宽度保持完整*/
+    height:800px;/*长度配合字体*/
+    background:#303030;
+    background-image: url('./image/aboutus.jpg');
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin:0;
+ }
+.container img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+    .h1{
+        color: #ffffff;
+        text-align: center;
+        font-size: 70px;
+        letter-spacing: 8px;
+        margin-top: 520px;
+        font-family:STFangsong,Fangsong;/*字体还可以改，但我还没找到哼合适的*/
+    }
+    .p1{
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 2.2;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .h2{
+        float: left;
+        display: inline;
+        color: #b8b8b8;
+        text-align: left;
+        font-weight: lighter;
+        font-size: 2px;/*调整两个span的间距*/
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+    .h2 span{
+        font-size: 65px;/*字体真正大小*/
+        animation:animate 1.2s linear infinite;
+    }
+    .h2 span:nth-child(1)/*通过延迟完成霓虹灯特效*/
+    {
+        animation-delay: 0s;
+    }
+    .h2 span:nth-child(2)
+    {
+        animation-delay: 0.3s;
+    }
+    .h2 span:nth-child(3)
+    {
+        animation-delay: 0.6s;
+    }
+    .h2 span:nth-child(4)
+    {
+        animation-delay: 0.9s;
+    }
+    @keyframes animate
+    {
+        0%,80%
+        {
+            color:#b8b8b8;/*这个灰度正好合适*/
+            text-shadow:none;
+        }
+        100%
+        {
+            color:#c0c0c0;
+            text-shadow:0 0 10px #c0c0c0 ,
+                        0 0 20px #c0c0c0,
+                        0 0 40px #c0c0c0;
+        }
+    }
+    .p2{
+        float:left;
+        display: inline;/*两段文字并排*/
+        position: absolute;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 2.2;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .swiper-container{
+        float:left;
+        display: inline;/*两段文字并排*/
+    }
+    .swiper-container .swiper-slide{
+        width:300px;
+        float:left;
+        display: inline;
+    }
+    .card{
+        position: relative;
+        background-color: #585858;
+        width:350px;
+        height: 450px;
+        margin:0 auto;
+    }
+    .card .content{
+        width:350px;
+        padding:20px;
+        box-sizing:border-box;
+    }
+    .card .slidertext{
+        position: relative;
+        width:100%;
+        height:100px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 30px;
+    }
+    /* .card .slidertext h3{
+        
+    } */
+    .h4{
+        float: right;
+        display: inline;
+        color: #b8b8b8;
+        text-align: left;
+        font-weight: lighter;
+        font-size: 65px;
+        margin-top: 575px;
+        margin-right: 20px;
+    }

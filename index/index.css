@@ -1,0 +1,275 @@
+@font-face{
+  font-family: China;
+  src: url(../font/HYQC.ttf);
+}
+*{margin:0 ;padding:0;}
+a{text-decoration:none;color:#c0c0c0;}
+body{
+     cursor:url(../image/a.cur),auto ;
+     background: url(./index_background.jpg) no-repeat center center  ;
+     position:relative;
+     background-size:cover;
+     background-attachment:fixed;
+     z-index:-10;
+     display:block;
+     overflow: hidden;
+}
+a{
+  cursor: url(../image/b.cur),auto;
+}
+
+.demo1{
+  width:100%;
+  height:100%;
+  /* background-color: rgba(255,255,255,0.5); */
+}
+#word1{
+  background:url(./1.jpg) no-repeat;
+  background-size:100% auto;
+  border-radius:15px;
+  opacity: 0.9;
+  z-index: 9999;
+  position: fixed;
+  text-align:center;
+  width:500px;
+  height:250px; 
+  left: 10.5%;
+  top: 5%;
+  font-size: 42px;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-family:"China";
+}
+#word11{
+  position: relative;
+  width:center;
+  padding-top:80px;
+  letter-spacing: 8px;
+}
+#word2{
+  border-radius:15px;
+  opacity: 0.9;
+  background:url(./2.jpg) no-repeat;
+  background-size:100% auto;
+  z-index: 9999;
+  position: fixed;
+  text-align:center;
+  width: 500px;
+  height: 250px; 
+  right: 10.5%;
+  top: 20%;
+  font-size: 42px;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-family:"China";
+}
+#word22{
+  width:center;
+  padding-top:80px;
+  letter-spacing: 8px;
+}#word3{
+  border-radius:15px;
+  opacity: 0.9;
+  background:url(./3.jpg) no-repeat;
+  background-size:100% auto;
+  z-index: 9999;
+  position: fixed;
+  text-align:center;
+  width: 500px;
+  height: 250px; 
+  left: 10.5%;
+  top: 51%;
+  font-size: 42px;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-family:"China";
+}
+#word33{
+  width:center;
+  padding-top:80px;
+  letter-spacing: 8px;
+}
+#word4{
+  border-radius:15px;
+  opacity: 0.9;
+  background:url(./4.jpg) no-repeat;
+  background-size:100% auto;
+  z-index: 9999;
+  position: fixed;
+  text-align:center;
+  width: 500px;
+  height: 250px; 
+  right: 10.5%;
+  top: 65%;
+  font-size: 42px;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  font-family:"China";
+}
+#word44{
+  width:center;
+  padding-top:80px;
+  letter-spacing: 8px;
+ 
+}
+.box{
+  position: fixed;
+  width: 120px;
+  height: 1505px; 
+  right: 45%;
+  background-image: linear-gradient(to bottom,#192a5603,
+  #00d2d303,
+  #6d214f03,#2e86de03,#4cd13703,#e8411803);
+}
+#Kaiqi{
+  margin-top: 30px;
+  border-radius: 25px;
+  color:#e0ffe0;
+  z-index: 9999;
+  text-align:center;
+  font-size: 40px;
+  font-family: "Arial","STXinwei","楷体",sans-serif;
+  animation-name: light;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 1s;
+}
+#Kaiqi h1{
+  /* font-weight: weight; */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  /* font-style: italic; */
+}
+
+#Kaiqi::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  bottom: -30px;
+  left: -30px;
+  right: -30px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #9fc1e8 ,#473b58 ,#a0a890, #aa7a77,#8c5750,
+  #d2afa5,#9cb8de,#6a8ea8,#152434,#9fc1e8);
+  background-size: 400%;
+  /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+  z-index: -1;
+  /* 设置模糊度 显示发光效果 */
+  filter: blur(40px);
+  transition: all 2s;
+  opacity: 0.3;
+  animation-name: light;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 1s;
+}
+
+#mainCanvas{
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+}
+
+#canvas{
+  opacity: 0.35;
+  position: absolute;
+  z-index: -2;
+}
+#word11 h1::before{
+  content: '游戏介绍';
+  position: absolute;
+  top: 10;
+  left: 2;
+  /* 文字透明色 */
+  color: transparent;
+  background-image: linear-gradient(to right,
+  #c23616,#00d2d3,
+  yellow,#2e86de,#4cd137);
+  /* 背景绘制区域 当值为text 的时候 代表设置了文字的镂空效果 但是前提必须是文字颜色为透明色 */
+  background-clip: text;
+  /* 谷歌浏览器的私有属性 */
+  -webkit-background-clip: text;
+  clip-path: circle(42px at 0% 50%);
+  animation: move 18s infinite;
+  animation-timing-function: ease;
+}
+#word22 h1::before{
+  content: '论坛中心';
+  position: absolute;
+  top: 10;
+  left: 2;
+  /* 文字透明色 */
+  color: transparent;
+  background-image: linear-gradient(to right,
+  #c23616,#00d2d3,
+  yellow,#2e86de,#4cd137);
+  /* 背景绘制区域 当值为text 的时候 代表设置了文字的镂空效果 但是前提必须是文字颜色为透明色 */
+  background-clip: text;
+  /* 谷歌浏览器的私有属性 */
+  -webkit-background-clip: text;
+  clip-path: circle(42px at 0% 50%);
+  animation: move 18s infinite;
+  animation-timing-function: ease;
+}
+#word33 h1::before{
+  content: '回到起点';
+  position: absolute;
+  top: 10;
+  left: 2;
+  /* 文字透明色 */
+  color: transparent;
+  background-image: linear-gradient(to right,
+  #c23616,#00d2d3,
+  yellow,#2e86de,#4cd137);
+  /* 背景绘制区域 当值为text 的时候 代表设置了文字的镂空效果 但是前提必须是文字颜色为透明色 */
+  background-clip: text;
+  /* 谷歌浏览器的私有属性 */
+  -webkit-background-clip: text;
+  clip-path: circle(42px at 0% 50%);
+  animation: move 18s infinite;
+  animation-timing-function: ease;
+}
+#word44 h1::before{
+  content: '关于我们';
+  position: absolute;
+  top: 10;
+  left: 2;
+  /* 文字透明色 */
+  color: transparent;
+  background-image: linear-gradient(to right,
+  #c23616,#00d2d3,
+  yellow,#2e86de,#4cd137);
+  /* 背景绘制区域 当值为text 的时候 代表设置了文字的镂空效果 但是前提必须是文字颜色为透明色 */
+  background-clip: text;
+  /* 谷歌浏览器的私有属性 */
+  -webkit-background-clip: text;
+  clip-path: circle(42px at 0% 50%);
+  animation: move 18s infinite;
+  animation-timing-function: ease;
+}
+/* 下面设置圆形移动效果 */
+@keyframes move{
+  0%{
+      clip-path: circle(42px at 0% 50%);
+  }
+  50%{
+      clip-path: circle(42px at 100% 50%);
+  }
+  100%{
+      clip-path: circle(42px at 0% 50%);
+  }
+}
+@keyframes light{
+  100%{
+      background-position: -400% ;
+  }
+}
+
+.words{
+  transition: .7s;
+}
+.words:hover{
+  transform: translateY(-20px);
+}

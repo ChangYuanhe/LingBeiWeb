@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+    <link rel="stylesheet" href="Aboutus.css">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="leading">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">游戏介绍</a></li>
+          <li><a href="#">论坛中心</a></li>
+          <li><a href="#">游戏展示</a></li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+
+    <div class="container"><!--背景图片及文字-->
+        <div class="h1">
+               <p>关于我们</p>
+        </div>
+         <div class="p1">
+                <p>
+                    我们是熬夜的秃子！<br>我们是熬夜的秃子！<br>我们是熬夜的秃子！<br>
+                    <!--文案还不知道怎么改-->
+                </p>
+        </div> 
+    </div>
+    <div class="h2"><!--设置霓虹灯效果-->
+            <p>
+                <span>了</span>
+                <span>解</span>
+                <span>我</span>
+                <span>们</span>
+            </p>
+    </div>
+    <div class="p2"><!--尾部文字-->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="slidertext">
+                                <h3>常元和</h3>
+                            </div>
+                            <div class="content">
+                            <p>头挺秃的<br>手撸js挺累的<br>没啥好说的<br>提前祝大家春节快乐吧</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="slidertext">
+                                <h3>李铭熙</h3>
+                            </div>
+                            <div class="content">
+                            <p>哈喽大家好，我叫李铭熙，在零杯中主要负责打杂，找找素材，写写文字，因为模电考试，我们组三个计院大一人都很悲惨，尤其是常元和（复习时间2天），希望大家可怜可怜他，投我们一票。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="slidertext">
+                                <h3>李涵之</h3>
+                            </div>
+                            <div class="content">
+                            <p>我是李涵之，除了关于我们页面啥都没干的一人，大体来说是在抱大腿。尽管事情没多少，但还是熬了通宵才写完，掉了很多头发。希望大家也心疼一下我的发量。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="slidertext">
+                                <h3>刘小禾</h3>
+                            </div>
+                            <div class="content">
+                            <p>城市设计学院刘小禾，在本次比赛中主要进行网页的排版与设计。爱好是摄影、旅游、画画，喜欢充满挑战和未知的事物。   心路历程：其实游戏不是我很擅长的领域、甚至可以说是有点陌生，起初拿到这个主题的时候不知从何下手，在跟队友的沟通探讨中，逐渐找到方向并且明确了方案，设计也在不断地完善。</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <script src="swiper.min.js"></script>
+             <script>
+                var swiper = new Swiper('.swiper-container', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: 'auto',
+                  coverflowEffect: {
+                    rotate: 30,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows : true,
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                });
+              </script>
+    </div>
+ </div>
+</body>
+</html>
